@@ -1,8 +1,47 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 2rem;
+}
+
+nav ul li a {
+    color: #fafafa;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(1, 1, 1, 0.5);
+    transition: all 0.5s ease;
+    border: 1px solid rgba(1, 1, 1, 0.25);
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.menu-nav-right {
+    color: #220000;
+    font-weight: 600;
 }
